@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'codeglen/ultimatesms',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '8ce0054ca68f0f7edea74db2f28ee2ecbfd1cf4a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -1084,9 +1084,9 @@
             'dev_requirement' => false,
         ),
         'aws/aws-sdk-php' => array(
-            'pretty_version' => '3.336.15',
-            'version' => '3.336.15.0',
-            'reference' => 'f8028ef4b8dcb0acfe86c33e207fd3cb0b9cbf3b',
+            'pretty_version' => '3.337.1',
+            'version' => '3.337.1.0',
+            'reference' => 'fa70febad922e9868c83bfe03c6d078fc2633e17',
             'type' => 'library',
             'install_path' => __DIR__ . '/../aws/aws-sdk-php',
             'aliases' => array(),
@@ -1174,9 +1174,9 @@
             'dev_requirement' => false,
         ),
         'codeglen/ultimatesms' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '8ce0054ca68f0f7edea74db2f28ee2ecbfd1cf4a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1258,9 +1258,9 @@
             'dev_requirement' => false,
         ),
         'doctrine/dbal' => array(
-            'pretty_version' => '3.9.3',
-            'version' => '3.9.3.0',
-            'reference' => '61446f07fcb522414d6cfd8b1c3e5f9e18c579ba',
+            'pretty_version' => '3.9.4',
+            'version' => '3.9.4.0',
+            'reference' => 'ec16c82f20be1a7224e65ac67144a29199f87959',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/dbal',
             'aliases' => array(),
@@ -1375,9 +1375,9 @@
             'dev_requirement' => false,
         ),
         'giggsey/libphonenumber-for-php' => array(
-            'pretty_version' => '8.13.52',
-            'version' => '8.13.52.0',
-            'reference' => 'cc9a82b237d79a85be47c0b06e3943f75ab35c32',
+            'pretty_version' => '8.13.53',
+            'version' => '8.13.53.0',
+            'reference' => 'b3362a3c04f87b02c6e712774d20f9e577c3918c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../giggsey/libphonenumber-for-php',
             'aliases' => array(),
@@ -1386,7 +1386,7 @@
         'giggsey/libphonenumber-for-php-lite' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '8.13.52',
+                0 => '8.13.53',
             ),
         ),
         'giggsey/locale' => array(
