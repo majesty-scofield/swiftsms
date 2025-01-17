@@ -57,13 +57,13 @@ return [
         'menu' => [
             'templateTitle' => 'Étape 3 | Paramètres d\'environnement',
             'title' => 'Paramètres d\'environnement',
-            'desc' => 'Veuillez sélectionner comment vous souhaitez configurer les applications <code>.env</code> file.',
+            'desc' => 'Veuillez sélectionner comment vous souhaitez configurer les applications <code>.env.remove</code> file.',
             'wizard-button' => 'Configuration de l\'assistant de formulaire',
             'classic-button' => 'Éditeur de texte classique',
         ],
         'wizard' => [
             'templateTitle' => 'Étape 3 | Paramètres d\'environnement | Assistant guidé',
-            'title' => 'Assitant <code>.env</code> Guidé',
+            'title' => 'Assitant <code>.env.remove</code> Guidé',
             'tabs' => [
                 'environment' => 'Environnement',
                 'database' => 'Base de donnée',
@@ -158,12 +158,12 @@ return [
         'classic' => [
             'templateTitle' => 'Étape 3 | Paramètres d\'environnement | Editeur Classique',
             'title' => 'Éditeur de texte classique',
-            'save' => 'Enregistrer .env',
+            'save' => 'Enregistrer .env.remove',
             'back' => 'Utiliser le formulaire',
             'install' => 'Enregistrer et installer',
         ],
-        'success' => 'Vos paramètres de fichier .env ont été enregistrés.',
-        'errors' => 'Impossible de sauvegarder le fichier .env, veuillez le créer manuellement.',
+        'success' => 'Vos paramètres de fichier .env.remove ont été enregistrés.',
+        'errors' => 'Impossible de sauvegarder le fichier .env.remove, veuillez le créer manuellement.',
     ],
 
     'install' => 'Installer',
@@ -180,7 +180,7 @@ return [
         'migration' => 'Migration &amp; Seed Console Output:',
         'console' => 'Application Console Output:',
         'log' => 'Installation Log Entry:',
-        'env' => 'Final .env File:',
+        'env' => 'Final .env.remove File:',
         'exit' => 'Cliquez ici pour quitter',
     ],
 

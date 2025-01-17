@@ -163,7 +163,7 @@ function write_env($key, $value, $overwrite = true)
 
     $out = implode("\n", $out);
 
-    // Actually write to file .env
+    // Actually write to file .env.remove
     file_put_contents(app()->environmentFilePath(), $out);
 }
 

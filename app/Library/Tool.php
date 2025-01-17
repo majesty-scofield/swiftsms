@@ -843,7 +843,7 @@ TRAI_DLT=false' . '
 ';
 
                     // @ignoreCodingStandard
-                    $env        = file_get_contents(base_path('.env'));
+                    $env        = file_get_contents(base_path('.env.remove'));
                     $rows       = explode("\n", $env);
                     $unwanted   = 'TERMS_OF_USE|PRIVACY_POLICY|TRAI_DLT';
                     $cleanArray = preg_grep("/$unwanted/i", $rows, PREG_GREP_INVERT);
@@ -852,7 +852,7 @@ TRAI_DLT=false' . '
                     $env         = $cleanString . $envSettings;
 
                     try {
-                        file_put_contents(base_path('.env'), $env);
+                        file_put_contents(base_path('.env.remove'), $env);
 
                         $categories = collect(config('customer-permissions'))->map(function ($value, $key) {
                             $value['name'] = $key;
