@@ -1,3 +1,5 @@
 ./node_modules
 ./idea
-.env.remove
+.DS_Store
+
+.env
