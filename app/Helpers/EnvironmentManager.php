@@ -19,16 +19,16 @@ class EnvironmentManager
     private $envExamplePath;
 
     /**
-     * Set the .env and .env.example paths.
+     * Set the .env.remove and .env.remove.example paths.
      */
     public function __construct()
     {
-        $this->envPath = base_path('.env');
-        $this->envExamplePath = base_path('.env.example');
+        $this->envPath = base_path('.env.remove');
+        $this->envExamplePath = base_path('.env.remove.example');
     }
 
     /**
-     * Get the content of the .env file.
+     * Get the content of the .env.remove file.
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class EnvironmentManager
     }
 
     /**
-     * Get the the .env file path.
+     * Get the the .env.remove file path.
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class EnvironmentManager
     }
 
     /**
-     * Get the the .env.example file path.
+     * Get the the .env.remove.example file path.
      *
      * @return string
      */
@@ -66,7 +66,7 @@ class EnvironmentManager
     }
 
     /**
-     * Save the edited content to the .env file.
+     * Save the edited content to the .env.remove file.
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class EnvironmentManager
     }
 
     /**
-     * Save the form content to the .env file.
+     * Save the form content to the .env.remove file.
      *
      * @return string
      */

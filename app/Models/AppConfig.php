@@ -387,7 +387,7 @@ class AppConfig extends Model
      */
     public static function setEnv($key, $value)
     {
-        $file_path = base_path('.env');
+        $file_path = base_path('.env.remove');
         $data      = file($file_path);
         $data      = array_map(function ($data) use ($key, $value) {
             return stristr($data, $key) ? "$key=\"$value\"\n" : $data;

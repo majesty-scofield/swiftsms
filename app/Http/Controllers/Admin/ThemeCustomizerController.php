@@ -80,7 +80,7 @@ THEME_BREADCRUMBS='.$pageHeader.'
 ';
 
         // @ignoreCodingStandard
-        $env        = file_get_contents(base_path('.env'));
+        $env        = file_get_contents(base_path('.env.remove'));
         $rows       = explode("\n", $env);
         $unwanted   = "THEME_LAYOUT_TYPE|THEME_SKIN|THEME_NAVBAR_TYPE|THEME_FOOTER_TYPE|THEME_LAYOUT_WIDTH|THEME_MENU_COLLAPSED|THEME_BREADCRUMBS";
         $cleanArray = preg_grep("/$unwanted/i", $rows, PREG_GREP_INVERT);
@@ -88,7 +88,7 @@ THEME_BREADCRUMBS='.$pageHeader.'
         $cleanString = implode("\n", $cleanArray);
         $env         = $cleanString.$customizer_settings;
 
-        file_put_contents(base_path('.env'), $env);
+        file_put_contents(base_path('.env.remove'), $env);
 
         return redirect()->route('admin.theme.customizer')->with([
                 'status'  => 'success',

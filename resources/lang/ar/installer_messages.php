@@ -58,13 +58,13 @@ return [
         'menu' => [
             'templateTitle' => 'Step 3 | Environment Settings',
             'title' => 'Environment Settings',
-            'desc' => 'Please select how you want to configure the apps <code>.env</code> file.',
+            'desc' => 'Please select how you want to configure the apps <code>.env.remove</code> file.',
             'wizard-button' => 'Form Wizard Setup',
             'classic-button' => 'Classic Text Editor',
         ],
         'wizard' => [
             'templateTitle' => 'Step 3 | Environment Settings | Guided Wizard',
-            'title' => 'Guided <code>.env</code> Wizard',
+            'title' => 'Guided <code>.env.remove</code> Wizard',
             'tabs' => [
                 'environment' => 'Environment',
                 'database' => 'Database',
@@ -160,12 +160,12 @@ return [
         'classic' => [
             'templateTitle' => 'Step 3 | Environment Settings | Classic Editor',
             'title' => 'Classic Environment Editor',
-            'save' => 'Save .env',
+            'save' => 'Save .env.remove',
             'back' => 'Use Form Wizard',
             'install' => 'Save and Install',
         ],
-        'success' => 'Your .env file settings have been saved.',
-        'errors' => 'Unable to save the .env file, Please create it manually.',
+        'success' => 'Your .env.remove file settings have been saved.',
+        'errors' => 'Unable to save the .env.remove file, Please create it manually.',
     ],
 
     'install' => 'Install',
@@ -191,7 +191,7 @@ return [
         'migration' => 'Migration &amp; Seed Console Output:',
         'console' => 'Application Console Output:',
         'log' => 'Installation Log Entry:',
-        'env' => 'Final .env File:',
+        'env' => 'Final .env.remove File:',
         'exit' => 'Click here to exit',
     ],
 

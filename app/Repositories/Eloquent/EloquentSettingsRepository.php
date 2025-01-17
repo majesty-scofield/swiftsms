@@ -48,7 +48,7 @@ MAIL_USERNAME='.$input['username'].'
 MAIL_ENCRYPTION='.$input['encryption'].'
 ';
             // @ignoreCodingStandard
-            $env = file_get_contents(base_path('.env'));
+            $env = file_get_contents(base_path('.env.remove'));
             $rows = explode("\n", $env);
             $unwanted = 'MAIL_MAILER|MAIL_DRIVER|MAIL_HOST|MAIL_PORT|MAIL_USERNAME|MAIL_ENCRYPTION';
             $cleanArray = preg_grep("/$unwanted/i", $rows, PREG_GREP_INVERT);
@@ -56,7 +56,7 @@ MAIL_ENCRYPTION='.$input['encryption'].'
             $cleanString = implode("\n", $cleanArray);
             $env = $cleanString.$smtpSetting;
 
-            file_put_contents(base_path('.env'), $env);
+            file_put_contents(base_path('.env.remove'), $env);
         }
 
         AppConfig::setEnv('MAIL_PASSWORD', $input['password']);
@@ -218,7 +218,7 @@ BROADCAST_DRIVER='.$driver.'
 ';
 
         // @ignoreCodingStandard
-        $env = file_get_contents(base_path('.env'));
+        $env = file_get_contents(base_path('.env.remove'));
         $rows = explode("\n", $env);
         $unwanted = 'PUSHER_APP_ID|PUSHER_APP_KEY|PUSHER_APP_SECRET|PUSHER_APP_CLUSTER|BROADCAST_DRIVER';
         $cleanArray = preg_grep("/$unwanted/i", $rows, PREG_GREP_INVERT);
@@ -227,7 +227,7 @@ BROADCAST_DRIVER='.$driver.'
         $env = $cleanString.$pusher_setting;
 
         try {
-            file_put_contents(base_path('.env'), $env);
+            file_put_contents(base_path('.env.remove'), $env);
 
             return true;
 
